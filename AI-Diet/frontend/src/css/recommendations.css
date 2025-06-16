@@ -1,0 +1,92 @@
+.recommendations-container {
+  width: 100vw;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url('/images/image6.jpg'); /* Keep your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recommendations-header {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.recommend-button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.recommend-button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-5px);
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.food-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.8rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.food-name {
+  font-size: 1.8rem;
+  color: #6a11cb;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.food-info {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.4rem 0;
+}
+
+.empty-text {
+  font-size: 1.3rem;
+  color: #999;
+  margin-top: 2rem;
+  text-align: center;
+}

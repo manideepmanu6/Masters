@@ -1,0 +1,74 @@
+/* Full-screen container with background image */
+.home-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), /* ✨ Less transparent overlay */
+      url('/images/image1.jpeg'); /* ✅ Make sure image is in /public/images/ */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.home-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Subtitle */
+.home-subtitle {
+    font-size: 1.8rem;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Button container - vertically stacked */
+.home-buttons {
+    display: flex;
+    flex-direction: column; /* ✨ Stack vertically */
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Common button styles */
+.home-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 50px; /* ✨ Full rounded */
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 280px; /* ✨ consistent button size */
+    text-align: center;
+}
+
+/* Hover effect */
+.home-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05); /* slight grow */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Login button specific */
+.login-button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}

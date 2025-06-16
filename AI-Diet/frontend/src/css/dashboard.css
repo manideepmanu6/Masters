@@ -1,0 +1,69 @@
+.dashboard-container {
+    width: 100vw;
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+      url('/images/image7.jpg'); /* ✅ Make sure this image exists */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.dashboard-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #6a11cb;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.dashboard-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-5px);
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #ff5f6d, #fc466b);
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #fc466b, #ff5f6d);
+    transform: scale(1.05);
+    color: white;
+}
